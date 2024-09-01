@@ -15,8 +15,8 @@ public class Loader extends Applet {
     public static boolean showCoordinates = true;
     public static boolean skipLobby = true;
     public static boolean splitPorts = false;
-    public static boolean debug = false;
-    public static boolean trace = false;
+    public static boolean debug = true;
+    public static boolean trace = true;
     public static int port = 43594;
     public static final BigInteger LOGIN_SERVER_RSA_MODULUS = new BigInteger("ea3680fdebf2621da7a33601ba39925ee203b3fc80775cd3727bf27fd8c0791c803e0bdb42b8b5257567177f8569024569da9147cef59009ed016af6007e57a556f1754f09ca84dd39a03287f7e41e8626fd78ab3b53262bd63f2e37403a549980bf3077bd402b82ef5fac269eb3c04d2a9b7712a67a018321ceba6c3bfb8f7f", 16);
     public static final BigInteger FILE_SERVER_RSA_MODULUS = new BigInteger("d6808be939bbfd2ec4e96b1581ce3e1144b526e7643a72e3c64fbb902724fbfcf14ab601da6d6f8dbb57d1c369d080d9fc392abeb7886e0076d07f2aea5810e540d2817fd1967e35b39cc95cf7c9170b5fb55f5bf95524b60e938f0d64614bc365b87d66963a8cc8664e32875366099ef297180d01c7c3842162865e11d92299", 16);
@@ -48,9 +48,9 @@ public class Loader extends Applet {
         aProperties1.put("cabbase", "g.cab");
         aProperties1.put("java_arguments", "-Xmx102m -Dsun.java2d.noddraw=true");
         aProperties1.put("colourid", "0");
-        aProperties1.put("worldid", "16");
+        aProperties1.put("worldid", "1");
         aProperties1.put("lobbyid", "15");
-        aProperties1.put("lobbyaddress", loadRunescape ? "lobby16.runescape.com" : "127.0.0.1");
+        aProperties1.put("lobbyaddress", loadRunescape ? "lobby16.runescape.com" : "avernic.com");
         aProperties1.put("demoid", "0");
         aProperties1.put("demoaddress", "");
         aProperties1.put("modewhere", "0");
@@ -66,7 +66,7 @@ public class Loader extends Applet {
         aProperties1.put("haveie6", "0");
         aProperties1.put("havefirefox", "1");
         aProperties1.put("cookieprefix", "");
-        aProperties1.put("cookiehost", "127.0.0.1");
+        aProperties1.put("cookiehost", "");
         aProperties1.put("cachesubdirid", "0");
         aProperties1.put("crashurl", "");
         aProperties1.put("unsignedurl", "");
@@ -78,7 +78,7 @@ public class Loader extends Applet {
     }
 
     void openFrame() {
-        aJFrame2 = new JFrame("Client");
+        aJFrame2 = new JFrame("Tarn Reborn | V1");
         aJFrame2.setLayout(new BorderLayout());
         aJPanel3.setLayout(new BorderLayout());
         aJPanel3.add(this);
@@ -115,7 +115,7 @@ public class Loader extends Applet {
         URL url;
         try {
             if (loadRunescape) url = new URL("http://world16.runescape.com");
-            else url = new URL("http://127.0.0.1");
+            else url = new URL("http://avernic.com");
         } catch (Exception exception) {
             exception.printStackTrace();
             return null;

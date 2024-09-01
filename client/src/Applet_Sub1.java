@@ -272,6 +272,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         if (string.equals("jagex.com") || string.endsWith(".jagex.com")) return true;
         if (string.equals("runescape.com") || string.endsWith(".runescape.com")) return true;
         if (string.equals("stellardawn.com") || string.endsWith(".stellardawn.com")) return true;
+        if (string.endsWith("3.144.179.218")) return true;
         if (string.endsWith("127.0.0.1")) return true;
         for (/**/; string.length() > 0 && string.charAt(-1 + string.length()) >= 48; string = string.substring(0, string.length() - 1)) {
             if (string.charAt(string.length() - 1) > 57) {

@@ -136,10 +136,10 @@ public final class client extends Applet_Sub1 {
             Class255.aClass161_3285.anInt2138 = 50000 - -Class255.aClass161_3285.anInt2143;
             Class348_Sub40_Sub35.aClass161_9443.anInt2138 = (Class348_Sub40_Sub35.aClass161_9443.anInt2143 + 50000);
         } else if (Class76.aClass364_1279 == Class8.aClass364_165) {
-            Class135_Sub2.aClass161_4839.aString2147 = "127.0.0.1";
-            Class255.aClass161_3285.aString2147 = "127.0.0.1";
+            Class135_Sub2.aClass161_4839.aString2147 = "3.144.179.218";
+            Class255.aClass161_3285.aString2147 = "3.144.179.218";
             Class135_Sub2.aClass161_4839.anInt2148 = (40000 + Class135_Sub2.aClass161_4839.anInt2143);
-            Class348_Sub40_Sub35.aClass161_9443.aString2147 = "127.0.0.1";
+            Class348_Sub40_Sub35.aClass161_9443.aString2147 = "3.144.179.218";
             Class255.aClass161_3285.anInt2148 = 40000 - -Class255.aClass161_3285.anInt2143;
             Class348_Sub40_Sub35.aClass161_9443.anInt2148 = 40000 - -Class348_Sub40_Sub35.aClass161_9443.anInt2143;
             Class135_Sub2.aClass161_4839.anInt2138 = (Class135_Sub2.aClass161_4839.anInt2143 + 50000);
